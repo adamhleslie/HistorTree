@@ -1,11 +1,11 @@
-Latitude ,Longitude ,Year,Day,Month,Name,Description
-30.284856,-97.738611,1937,0,0,University of Texas Tower,1996 Massacre
+Latitude ,Longitude ,Year,Day,Month,Location,Name,Description
+30.284856,-97.738611,1966,1,8,University of Texas Tower,1996 Massacre,"Charles Joseph Whitman, an architectural engineering student at the university, barricaded himself in the observation deck of the tower of the Main Building with a scoped Remington 700 deer rifle and various other weapons. In a 96-minute standoff, Whitman killed 14 Austin residents and wounded many more. Police and armed citizens climbed up the Tower to the observation deck and shot Whitman to death."
 30.2857,-97.7292,1971,22,5,"LBJ Library and Museum
-",Body of lady Bird Johnson is buried here
-30.2861,-97.7394,1881,30,3,University of Texas ,Alumni Greg Abbott
-29.425833,-98.486111,1744,0,0,Alamo,Battle of the alamo
-29.86,-95.39,1836,0,0,Harris,Battle of San Jancinto 
-31,-100,1684,0,0,Texas,Texas Revolution 
-40.711667,-74.0125,1973,4,4,World Trade Center,9/11 attack
-37.431573,-78.656894,1943,15,1,The Pentagon,9/11 attack
-38.8977,-77.0365,1800,1,11,White House,Attempted attack on it on  9/11
+",Library dedicated to LBJ,Johnson and then-President Richard Nixon in attendance. The current director is Presidential historian Mark K. Updegrove.
+30.2861,-97.7394,1981,22,5,University of Texas ,Greg Abbott earned a Bachelor ,Bachelor of Business Administration
+29.425833,-98.486111,1836,6,3,Alamo,Battle of the alamo,Pivotal event in Texas Revolution
+29.86,-95.39,1836,21,4,Harris,Battle of San Jancinto ,Decisive Battle of Texas Revolution
+31,-100,1835,2,10,Texas,Texas Revolution ,Mexican province of Texas rebelled against the centralist Mexican government
+40.711667,-74.0125,2001,11,9,World Trade Center,9/11 attack,Terrorist Attack
+37.431573,-78.656894,2001,11,9,The Pentagon,9/11 attack,Terrorist Attack
+38.8977,-77.0365,2001,11,9,White House,9/11 attack,attempted Terrorist Attack
