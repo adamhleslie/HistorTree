@@ -5,9 +5,10 @@ package hoodedhackers.histortree;
  */
 public class Node {
     String name;
-    String description;
-    int lat;
-    int lon;
+    String[] vals;
+//    String location;
+//    String date; ///TODO set as int
+//    String description;
 
     Node parent;
     Node left;

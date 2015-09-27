@@ -1,10 +1,14 @@
 package hoodedhackers.histortree;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class NodeViewFragment extends Fragment {
@@ -15,7 +19,9 @@ public class NodeViewFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     ////A
+    private ArrayAdapter<String> arrayAdapter;
     private TextView nodeName;
+    private ListView listView;
     private View rootView;
     private Node node;
 
@@ -32,7 +38,14 @@ public class NodeViewFragment extends Fragment {
     }
 
     public void setNode(Node newNode) {
-        this.node = newNode;
+        node = newNode;
+    }
+
+    public void setText() {
+        nodeName.setText(node.name);
+        arrayAdapter.clear();
+        arrayAdapter.addAll(node.vals);
+        arrayAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -40,7 +53,10 @@ public class NodeViewFragment extends Fragment {
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_main, container, false);
         nodeName = (TextView) rootView.findViewById(R.id.nodeName);
-        nodeName.setText(node.name);
+        listView = (ListView) rootView.findViewById(R.id.listView);
+        arrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1);
+        listView.setAdapter(arrayAdapter);
+        setText();
         return rootView;
     }
 }
