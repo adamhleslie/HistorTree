@@ -12,6 +12,8 @@ public class MainActivity extends ActionBarActivity {
     Button btnShowLocation;
 
     GPSTracker gps;
+    double lat;
+    double lon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +29,15 @@ public class MainActivity extends ActionBarActivity {
                 gps = new GPSTracker(MainActivity.this);
 
                 if(gps.canGetLocation()) {
-                    double latitude = gps.getLatitude();
-                    double longitude = gps.getLongitude();
+                    lat = gps.getLatitude();
+                    lon = gps.getLongitude();
 
                     Toast.makeText(
                             getApplicationContext(),
-                            "Your Location is -\nLat: " + latitude + "\nLong: "
-                                    + longitude, Toast.LENGTH_LONG).show();
-                } else {
+                            "-\nLat: " + lat + " Long: "
+                                    + lon, Toast.LENGTH_LONG).show();
+                }
+                if(lat == 0 && lon == 0) {
                     gps.showSettingsAlert();
                 }
             }
